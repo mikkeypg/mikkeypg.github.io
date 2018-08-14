@@ -1,5 +1,9 @@
 <!--I hope everything will work out-->
 <html>
+   <table class="tbl">
+    <col width="234px"><tr><td>
+    <button class="btn1" onclick="shuffle()">shuffle</button></td></tr>
+  </table> 
 <script type="text/javascript">
 function random () {
 var r=Math.floor(Math.random()*17)
@@ -55,6 +59,8 @@ body{
 button {
     width: 60px;
     height: 60px;
+  font-family:bookman old style;
+  font-size:25px;
 }
 table{
 background-color: black;
@@ -64,12 +70,19 @@ td{
  
   border: 3px solid #ff7c66;
 }
-.btn{
-  border:black; 
-  background: #ff7c66;
-}  
+  .btn1{
+    width: 270px;
+    height:53px;
+    font-family:bookman old style;
+    font-size:35px;
+    }
+  .tbl{
+     margin-bottom:10px;
+    height:75px;
+  }
+  }
 </style>
-<button onclick="shuffle()">shuffle</button>
+ 
 <table>
   <tr>
   <td><button onclick="alert(':)')">1</button></td>
