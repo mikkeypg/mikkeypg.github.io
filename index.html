@@ -1,5 +1,6 @@
 <!--I hope everything will work out-->
-<script>
+<html>
+<script type="text/javascript">
 function random () {
 var r=Math.floor(Math.random()*17)
 return r
@@ -22,7 +23,7 @@ function са() {
 	}
 	return array;
 }
-var v=са();
+var v;
 function swap (x1,y1,x2,y2) {
 var m=v[x1][y1];
 var j=v[x2][y2];
@@ -39,6 +40,7 @@ return result
 }
 
 function shuffle(){
+v=са()
 var e=Math.floor(Math.random()*16)
 for(var t=0;t<16;t++){
 var z=randompair()
@@ -102,3 +104,4 @@ td{
 </table>
 </div>
 </div>
+</html>
