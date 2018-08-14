@@ -1,4 +1,53 @@
 <!--I hope everything will work out-->
+<script>
+function random () {
+var r=Math.floor(Math.random()*17)
+return r
+}  
+function tas () {
+for(var g=0; g<11; g++){var a=random();var b=random(); console.log(a+":"+b)} 
+
+}
+
+function са() {
+	var array=[];
+	var rows=document.getElementsByTagName ("tr");
+	for (var c=0; c<rows.length; c++) {
+		array[c]=[];
+		var columns=rows[c].children;	
+		for (var d=0; d<columns.length;d++){
+			array[c][d]=columns[d];
+			
+		}		
+	}
+	return array;
+}
+var v=са();
+function swap (x1,y1,x2,y2) {
+var m=v[x1][y1];
+var j=v[x2][y2];
+var q=m.innerHTML;
+m.innerHTML=j.innerHTML
+j.innerHTML=q
+}
+
+function randompair (){
+var r=Math.floor(Math.random()*4)
+var q=Math.floor(Math.random()*4)
+var result=[r,q];
+return result
+}
+
+function shuffle(){
+var e=Math.floor(Math.random()*16)
+for(var t=0;t<16;t++){
+var z=randompair()
+var x=randompair()
+swap(z[0],z[1],x[0],x[1])
+}
+}
+ 
+</script>
 <style>
 body{
     background-color: #ffffff;
@@ -22,6 +71,7 @@ td{
   background: #ff7c66;
 }  
 </style>
+<button onclick="shuffle()">shuffle</button>
 <table>
   <tr>
   <td><button onclick="alert(':)')">1</button></td>
