@@ -7,9 +7,7 @@ return r
 }  
 function tas () {
 for(var g=0; g<11; g++){var a=random();var b=random(); console.log(a+":"+b)} 
-
 }
-
 function са() {
 	var array=[];
 	var rows=document.getElementsByTagName ("tr");
@@ -31,14 +29,12 @@ var q=m.innerHTML;
 m.innerHTML=j.innerHTML
 j.innerHTML=q
 }
-
 function randompair (){
 var r=Math.floor(Math.random()*4)
 var q=Math.floor(Math.random()*4)
 var result=[r,q];
 return result
 }
-
 function shuffle(){
 v=са()
 var e=Math.floor(Math.random()*16)
@@ -59,6 +55,8 @@ body{
 button {
     width: 60px;
     height: 60px;
+  font-family:bookman old style;
+  font-size:25px;
 }
 table{
 background-color: black;
@@ -68,12 +66,22 @@ td{
  
   border: 3px solid #ff7c66;
 }
-.btn{
-  border:black; 
-  background: #ff7c66;
-}  
+  .btn1{
+    width: 270px;
+    height:53px;
+    font-family:bookman old style;
+    font-size:35px;
+    }
+  .tbl{
+     margin-bottom:10px;
+    height:75px;
+  }
+  }
 </style>
-<button onclick="shuffle()">shuffle</button>
+  <table class="tbl">
+    <col width="234px"><tr><td>
+    <button class="btn1" onclick="shuffle()">shuffle</button></td></tr>
+  </table> 
 <table>
   <tr>
   <td><button onclick="alert(':)')">1</button></td>
