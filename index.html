@@ -1,6 +1,6 @@
 <!--I hope everything will work out-->
-<html>
-<script type="text/javascript">
+    <html>
+  <script type="text/javascript">
 function random () {
 var r=Math.floor(Math.random()*17)
 return r
@@ -16,7 +16,6 @@ function са() {
 		var columns=rows[c].children;	
 		for (var d=0; d<columns.length;d++){
 			array[c][d]=columns[d];
-			
 		}		
 	}
 	return array;
@@ -44,80 +43,88 @@ var x=randompair()
 swap(z[0],z[1],x[0],x[1])
 }
 }
- 
-</script>
+  </script>
 <style>
-body{
+  body{
     background-color: #ffffff;
-  margin-top: 100px;
-  margin-left:300px;
+    margin-top: 100px;
+    margin-left: 300px;
   }
-button {
+  button{
     width: 60px;
     height: 60px;
-    font-family:bookman old style;
-    font-size:20px;
-}
-table{
-background-color: #ff7c66;
-  border: 3px solid black;
-  margin-top:10px;
-  margin-left:-5px;
-}
- td{
-  border: 2px solid black;
-}
-.btn{
-  border: px black solid; 
-  background: #ff7c66;
-  height: 57px;
-  margin-top: 1px;
-}  
+    font-family: bookman old style;
+    font-size: 20px;
+  }
+  table{
+    background-color: #ff7c66;
+    border: 3px solid black;
+    margin-top:10px;
+    margin-left: -5px;
+  }
+  td{
+    border: 2px solid black;
+  }
+  .btn{
+    border: px black solid; 
+    background: #ff7c66;
+    height: 57px;
+    margin-top: 1px;
+  }  
   .btns{
     
     margin-bottom: 5px;
     width: 269px;
     height: 40px;
   }
-   .box {
+  .box{
     border: double black 6px;
     background-color: #ff7c66;
-    width:269px; 
+    width: 269px; 
     height:40px;
-</style>
+  }
+  .box2{
   
-<div class="box">
-<div class="container">
-  <button onclick="shuffle()" class="btns">shuffle</button>
+    border-style: double;
+    border-color: #ff7c66;
+    border-width: 5px;
+    background-color: #ff7c66;
+    margin-right: 287px;
+    height: 341px;
+  }
+</style>
+      <div class="box2">
+      <div class="container">
+      <div class="box">
+      <div class="container">
+<button onclick="shuffle()"     class="btns">shuffle</button>
 <table>
-  </div>
-  </div>
+    </div>
+      </div>
   <tr>
-  <td><button onclick="alert(':)')">1</button></td>
+<td><button onclick="alert(':)')">1</button></td>
 <td><button>2</button></td>
 <td><button>3</button></td>
 <td><button>4</button> </td>
- </tr>
- <tr>
-   <td><button>5</button></td>
+  </tr>
+  <tr>
+<td><button>5</button></td>
 <td><button>6</button></td>
 <td><button>7</button></td>
 <td><button>8</button></td>
- </tr>
+  </tr>
   
-<tr>
-  <td><button>9</button></td>
+  <tr>
+<td><button>9</button></td>
 <td><button>10</button></td>
 <td><button>11</button></td>
 <td><button>12</button></td>
   </tr>
-<tr>
-  <td><button>13</button></td>
+  <tr>
+<td><button>13</button></td>
 <td><button>14</button></td>
 <td><button>15</button></td>
 <td class="btn"></td>
-</tr>
-</table>
-</div>
-</div>
-</html>
+  </tr>
+  </table>
+    </html>
