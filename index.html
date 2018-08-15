@@ -55,22 +55,43 @@ body{
 button {
     width: 60px;
     height: 60px;
+    font-family:bookman old style;
+    font-size:20px;
 }
 table{
-background-color: black;
-  border: 5px solid #ff7c66;
+background-color: #ff7c66;
+  border: 3px solid black;
+  margin-top:10px;
+  margin-left:-5px;
 }
-td{
- 
-  border: 3px solid #ff7c66;
+ td{
+  border: 2px solid black;
 }
 .btn{
-  border:black; 
+  border: px black solid; 
   background: #ff7c66;
+  height: 57px;
+  margin-top: 1px;
 }  
+  .btns{
+    
+    margin-bottom: 5px;
+    width: 269px;
+    height: 40px;
+  }
+   .box {
+    border: double black 6px;
+    background-color: #ff7c66;
+    width:269px; 
+    height:40px;
 </style>
-<button onclick="shuffle()">shuffle</button>
+  
+<div class="box">
+<div class="container">
+  <button onclick="shuffle()" class="btns">shuffle</button>
 <table>
+  </div>
+  </div>
   <tr>
   <td><button onclick="alert(':)')">1</button></td>
 <td><button>2</button></td>
@@ -90,12 +111,11 @@ td{
 <td><button>11</button></td>
 <td><button>12</button></td>
   </tr>
-   
 <tr>
   <td><button>13</button></td>
 <td><button>14</button></td>
 <td><button>15</button></td>
-<td><button class="btn"></button></td>
+<td class="btn"></td>
 </tr>
 </table>
 </div>
